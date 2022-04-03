@@ -1,15 +1,13 @@
 package com.test.sentrifugo.test;
 
-import com.test.sentrifugo.pages.LoginPage;
+import com.test.sentrifugo.pages.LoginPageSntr;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+public class LoginTestSntr {
     //    @Test
 //    public void validateSuperAdmin(){
 //        WebDriverManager.chromedriver().setup();
@@ -32,7 +30,7 @@ public class LoginTest {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://demo.sentrifugo.com/index.php/");
         driver.manage().window().maximize();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPageSntr loginPage = new LoginPageSntr(driver);
         loginPage.dynamicLogin("EM05","sentrifugo");
         String actualURL = driver.getCurrentUrl();
         String expectedURL = "http://demo.sentrifugo.com/index.php/index/welcome";
@@ -44,10 +42,10 @@ public class LoginTest {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("http://demo.sentrifugo.com/index.php/");
         driver.manage().window().maximize();
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPageSntr loginPage = new LoginPageSntr(driver);
         loginPage.dynamicLogin("EM02","sentrifugo");
         String actualURL = driver.getTitle();
-        String expectedURL = "";
+        String expectedURL = "Sentrifugo - Open Sourse HRMS";
         Assert.assertEquals(actualURL,expectedURL);
     }
 }

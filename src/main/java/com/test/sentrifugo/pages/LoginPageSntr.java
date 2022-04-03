@@ -9,8 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class LoginPage {
-    public LoginPage(WebDriver driver){
+public class LoginPageSntr {
+    public LoginPageSntr(WebDriver driver){
         PageFactory.initElements(driver,this);
     }
     //We are going to store our element locations and methods here.

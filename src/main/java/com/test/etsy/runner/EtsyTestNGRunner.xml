@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNG Runner Practice">
+    <test name="Etsy Tests">
+        <classes>
+            <class name="com.test.etsy.test.EtsyMainTest"></class>
+<!--            <class name="com.test.orengehrm.test.AdminTest"></class>-->
+<!--            <class name="com.test.orengehrm.test.PimTest"></class>-->
+        </classes>
+    </test>
+<!--    <test name="Select Class Test">-->
+<!--        <classes>-->
+<!--            <class name="SlectClass.DreamCars"></class>-->
+<!--            <class name="SlectClass.SelectBasics"></class>-->
+<!--        </classes>-->
+
+<!--    </test>-->
+</suite>
